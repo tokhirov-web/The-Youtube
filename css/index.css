@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro';
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    max-height: 56px;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.brand-left {
+    display: flex;
+    align-items: center;
+}
+
+.burger {
+    gap: 4px;
+    padding: 6px;
+    border: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    cursor: pointer;
+    transition: 320ms;
+}
+
+.burger:hover {
+    border-radius: 5px;
+    background-color: rgb(90, 90, 90);
+}
+
+.burger span {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+}
+
+.search-center {
+    display: flex;
+    gap: 15px;
+}
+
+form {
+    height: 40px;
+    display: flex;
+}
+
+.search-input {
+    padding: 0 0 0 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid gray;
+    border-right: none;
+    border-radius: 35px 0 0 35px;
+    width: 540px;
+    font-size: 16px;
+}
+
+.s-btn {
+    border: 1px solid gray;
+    background-color: rgb(82, 82, 82);
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: none;
+    border-radius: 0 35px 35px 0;
+}
+
+.glass {
+    fill: white;
+}
+
+.mic {
+    width: 40px;
+    height: 40px;
+    padding: 8px 8px;
+    border-radius: 30px;
+    background-color: rgb(48, 48, 48);
+    fill: white;
+    transition: 290ms;
+}
+
+.mic:hover {
+    background-color: rgb(88, 88, 88);
+}
+
+.options-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.video-camera {
+    width: 40px;
+    height: 40px;
+    fill: white;
+    transition: 290ms;
+    border-radius: 30px;
+    padding: 4px 4px;
+}
+
+.video-camera:hover {
+    border-radius: 30px;
+    background-color: rgb(53, 53, 53);
+}
+
+.bell {
+    width: 40px;
+    height: 40px;
+    fill: white;
+    transition: 290ms;
+    border-radius: 30px;
+    padding: 7px 7px;
+}
+
+.bell:hover {
+    border-radius: 30px;
+    background-color: rgb(53, 53, 53);
+}
+
+.profile {
+    width: 40px;
+    height: 40px;
+    fill: white;
+    transition: 290ms;
+    border-radius: 30px;
+    padding: 7px 7px;
+}
+
+.profile:hover {
+    border-radius: 30px;
+    background-color: rgb(53, 53, 53);
+}
+
+main {
+    display: flex;
+}
+
+.sidebar {
+    width: 240px;
+    padding: 12px 25px;
+}
+
+.sidebar-links {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.sidebar-links a {
+    width: 115%;
+    height: 35px;
+    padding: 5px 4px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    transition: 280ms;
+}
+
+.sidebar-links a:hover {
+    background-color: rgb(65, 65, 65);
+}
+
+.home {
+    background-color: rgb(65, 65, 65);
+}
+
+.side-icons {
+    fill: white;
+    width: 25px;
+}
+
+hr {
+    background-color: #E3E3E3;
+    margin: 10px 0;
+    height: 1px;
+    width: 115%;
+}
+
+.main-content {
+    width: 100%;
+    margin: 14px 0 0 20px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 200px;
+    grid-row-gap: 105px;
+    grid-column-gap: 15px;
+    padding: 0 10px;
+}
+
+.video {
+    height: 200px;
+    margin-bottom: 12px;
+}
+
+.video iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.description {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.channel-pic img {
+    border-radius: 40px;
+}
+
+.text-right {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.text-right span {
+    color: gray;
+    font-size: 14px;
+}
+
+.views {
+    display: flex;
+    gap: 25px;
+}
